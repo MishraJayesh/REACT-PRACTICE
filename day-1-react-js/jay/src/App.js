@@ -18,7 +18,7 @@ export default function App()
 
   return (
     <div className="App">
-      Jayesh
+      <h1>Jayesh</h1>
       <Hello /> 
       <Bye />
       <Ok />

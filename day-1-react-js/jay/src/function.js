@@ -9,7 +9,7 @@ export function Hello(){
 export function Bye(){
     return (
         <div className ="Bye">
-            Bye
+            This Div Welcomes
         </div>
     )
 }
@@ -17,7 +17,7 @@ export function Bye(){
 export default function Ok(){
     return (
         <div className ="Ok">
-            OK
+            Have Fun
         </div>
     )
 }

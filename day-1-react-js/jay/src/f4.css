@@ -5,4 +5,8 @@
     color: white;
     border: dashed orange 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    margin: 10px;
+    text-shadow: 2px 2px;
   }
