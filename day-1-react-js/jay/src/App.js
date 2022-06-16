@@ -1,7 +1,17 @@
-//import logo from './logo.svg';
 import './App.css';
-import { Hello, Bye } from './funciton';
-import Ok from './funciton';  
+import './f1.css';
+import './f2.css';
+import './f3.css';
+import './f4.css';
+import './f5.css';
+import { Hello, Bye } from './function';
+import Ok from './function';  
+
+import Student from './function1'
+import React from './function2';
+import Chemistry from './function3';  
+import Neon from './function4';  
+import Software from './function5';
 
 export default function App()
 {
@@ -12,6 +22,11 @@ export default function App()
       <Hello /> 
       <Bye />
       <Ok />
-    </div>
+      <Student />
+      <React />
+      <Chemistry />
+      <Neon />
+      <Software />
+     </div>
   );
 }

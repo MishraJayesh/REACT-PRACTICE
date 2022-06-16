@@ -1,0 +1,8 @@
+.neon {
+    text-align: center;
+    font-size: 32px;
+    background-color:darkslategrey;
+    color: white;
+    border: dashed orange 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }

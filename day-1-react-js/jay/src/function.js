@@ -1,6 +1,6 @@
 export function Hello(){
     return (
-        <div>
+        <div className ="Hello">
             Hello world
         </div>
     )
@@ -8,7 +8,7 @@ export function Hello(){
 
 export function Bye(){
     return (
-        <div>
+        <div className ="Bye">
             Bye
         </div>
     )
@@ -16,7 +16,7 @@ export function Bye(){
 
 export default function Ok(){
     return (
-        <div>
+        <div className ="Ok">
             OK
         </div>
     )
