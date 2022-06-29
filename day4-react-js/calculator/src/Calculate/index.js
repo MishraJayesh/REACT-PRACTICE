@@ -45,9 +45,9 @@ function Calc()
   }
   return (
     
-    <div>
+    <div className="container">
 
-      <label>Enter first number</label>
+      <label className="lab1">Enter first number</label>
       <input
         className="number1"
         type="number"
@@ -56,7 +56,7 @@ function Calc()
         onChange={(event) => handleChange(event, num1)}
       />
 
-      <label>Enter second number</label>
+      <label className="lab2">Enter second number</label>
       <input
         className="number2"
         type="number"
@@ -65,7 +65,7 @@ function Calc()
         onChange={(event) => handleChange1(event, num2)}
       />
 
-      <label>Enter operator</label>
+      <label className="lab3">Enter operator</label>
       
       <button className="but1" onClick={() => handleButtonClick('+')}>+</button>
       <button className="but2" onClick={() => handleButtonClick('-')}>-</button>

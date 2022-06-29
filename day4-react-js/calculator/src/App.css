@@ -2,8 +2,20 @@
   text-align: center;
 }*/
 
+.container{
+  margin: 5px;
+  padding: 15px;
+  border: dotted red 10px;
+  color: black;
+  background-color:deepskyblue;
+  border-radius: 10%;
+  height: 402px;
+  width: 210px;
+}
+
 .number1{
   margin: 3px;
+  padding: 10px;
   border: double black 5px;
   color: black;
   background-color: chartreuse;
@@ -13,58 +25,58 @@
 
 .number2{
   margin: 3px;
+  padding: 10px;
   border: double black 5px;
   color: black;
   background-color: chartreuse;
   border-radius: 10%;
-
 }
 
 .but1{
   margin: 2px;
+  padding: 5px;
   border: double black 5px;
   color: black;
   background-color:darkkhaki;
   border-radius: 15%;
-
 }
 
 .but2{
   margin: 2px;
+  padding: 5px;
   border: double black 5px;
   color: black;
   background-color:darkkhaki;
   border-radius: 15%;
-
 }
 
 .but3{
   margin: 2px;
+  padding: 5px;
   border: double black 5px;
   color: black;
   background-color:darkkhaki;
   border-radius: 15%;
-
 }
 
 .but4{
   margin: 2px;
+  padding: 5px;
   border: double black 5px;
   color: black;
   background-color:darkkhaki;
   border-radius: 15%;
-
 }
 
 .but5{
   margin: 2px;
+  padding: 3px;
   border: double black 5px;
   color: black;
   background-color:darkkhaki;
   border-radius: 15%;
 
 }
-
 
 .res{
   margin: 4px;
