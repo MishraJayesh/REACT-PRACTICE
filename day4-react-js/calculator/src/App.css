@@ -1,5 +1,80 @@
-.App {
+/*.App {
   text-align: center;
+}*/
+
+.number1{
+  margin: 3px;
+  border: double black 5px;
+  color: black;
+  background-color: chartreuse;
+  border-radius: 10%;
+
+}
+
+.number2{
+  margin: 3px;
+  border: double black 5px;
+  color: black;
+  background-color: chartreuse;
+  border-radius: 10%;
+
+}
+
+.but1{
+  margin: 2px;
+  border: double black 5px;
+  color: black;
+  background-color:darkkhaki;
+  border-radius: 15%;
+
+}
+
+.but2{
+  margin: 2px;
+  border: double black 5px;
+  color: black;
+  background-color:darkkhaki;
+  border-radius: 15%;
+
+}
+
+.but3{
+  margin: 2px;
+  border: double black 5px;
+  color: black;
+  background-color:darkkhaki;
+  border-radius: 15%;
+
+}
+
+.but4{
+  margin: 2px;
+  border: double black 5px;
+  color: black;
+  background-color:darkkhaki;
+  border-radius: 15%;
+
+}
+
+.but5{
+  margin: 2px;
+  border: double black 5px;
+  color: black;
+  background-color:darkkhaki;
+  border-radius: 15%;
+
+}
+
+
+.res{
+  margin: 4px;
+  color: black;
+  background-color:springgreen;
+  border: double black 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-style: italic;
+  border-radius: 10%;
 }
 
 .App-logo {

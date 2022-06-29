@@ -1,82 +1,86 @@
 import React, { useState } from "react";
 
-function Calc() {
+function Calc() 
+{
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
+  const [op, setOp] = useState();
+  const [result, setResult] = useState();
 
-    const [num1, setNum1] = useState(0);
-    const [num2, setNum2] = useState(0);
-    const [op,setOp] = useState();
-    const [result, setResult] = useState(0);
+  function handleChange(event, number) 
+  {
+    setNum1(event.target.value);
+  }
+  function handleChange1(event, number) 
+  {
+    setNum2(event.target.value);
+  }
 
-    function handleChange(event, number) {
-        setNum1(event.target.value);
+  function handleButtonClick(str)
+  {
+  setOp(str);
+  }
+
+  function calculate()
+   {
+    console.log(op);
+    let ans = 0;
+    if (op === "+") 
+    {
+      ans = Number(num1) + Number(num2);
     }
+    else if (op === "-") 
+    {
+        ans = Number(num1) - Number(num2);
+    } 
+    else if (op === "*") 
+    {
+      ans = Number(num1) * Number(num2);
+    } 
+    else if (op==="/") 
+    {
+      ans = Number(num1) / Number(num2);
+    }
+    setResult(ans);
+  }
+  return (
     
-    function handleChange1(event, number) {
-        setNum2(event.target.value);
-    }
+    <div>
 
-    function handleSelect(e) {
-        setOp(e.target.value);
-    }
+      <label>Enter first number</label>
+      <input
+        className="number1"
+        type="number"
+        name="num1"
+        value={num1}
+        onChange={(event) => handleChange(event, num1)}
+      />
 
-    function calculate() {
-        let ans = " ";
-        if (op === '=') {
-            return;
-        }
-        else if (op === '+') {
-            ans = Number(num1) + Number(num2);
-            return ans;
-        } 
-        else if (op === '-') {
-            ans = Number(num1) - Number(num2);
-            return ans;
-        } 
-        else if (op === '*') {
-            ans = Number(num1) * Number(num2);
-            return ans;
-        } 
-        else if (op === '/') {
-            ans = Number(num1) / Number(num2);
-            return ans;
-        }
-        setResult(ans);
-    }
+      <label>Enter second number</label>
+      <input
+        className="number2"
+        type="number"
+        name="num2"
+        value={num2}
+        onChange={(event) => handleChange1(event, num2)}
+      />
 
-    return (
-        <div >
+      <label>Enter operator</label>
+      
+      <button className="but1" onClick={() => handleButtonClick('+')}>+</button>
+      <button className="but2" onClick={() => handleButtonClick('-')}>-</button>
+      <button className="but3" onClick={() => handleButtonClick('*')}>*</button>
+      <button className="but4" onClick={() => handleButtonClick('/')}>/</button>
+      
+      <button className="but5" type="submit" onClick={calculate}>
+        Calculate
+      </button>
+     
+      <h1>{num1} {op} {num2}</h1>
+      <h1 className="res">CHECK YOUR RESULT: {result}</h1>
 
-            <label>Enter first number</label>
-            <input
-                type="number"
-                name="num1"
-                value={num1}
-                onChange={(event) => handleChange(event, num1)}
-            />
-
-            <label>Enter first number</label>
-            <input
-                type="number"
-                name="num2"
-                value={num2}
-                onChange={(event) => handleChange1(event, num2)}
-            />
-
-            <label>Select operator</label>
-            <select name="operator" onChange={(e) => handleSelect(e)}>
-                <option value="Add.">+</option>
-                <option value="Sub.">-</option>
-                <option value="Multiply">*</option>
-                <option value="Division">/</option>
-            </select>
-
-            <button type="submit" onClick={calculate}>
-                    Calculate
-            </button>
-
-            <h1> Result: {result} </h1>
-
-        </div>
-    );
+    </div>
+  );
 }
+
 export default Calc;
