@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 function App() {
   const [name, setName] = useState('Jayesh');
@@ -15,7 +15,7 @@ function App() {
     console.log('Page Rendered Again..!!!');
     fetchData();
 
-  }, [name]);
+  }, []);
 
   return (
     <div className="App">
@@ -28,8 +28,8 @@ function App() {
         ))
       }
     </div>
-    
+
   );
-    }
+}
 
 export default App;
