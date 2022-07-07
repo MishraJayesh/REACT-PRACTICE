@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+//import React, { useState, useEffect } from 'react';
 import './App.css';
+import Table from './table';
 function App() {
-  const [name, setName] = useState('Jayesh');
+  /*const [name, setName] = useState('Jayesh');
   const [data, setData] = useState([]);
 
   async function fetchData() {
@@ -15,18 +16,19 @@ function App() {
     console.log('Page Rendered Again..!!!');
     fetchData();
 
-  }, []);
+  }, []);*/
 
   return (
     <div className="App">
-      <h1>{name}</h1>
+      {/*<h1>{name}</h1>
       <button type="button" onClick={() => setName('Naresh')}>Change Name</button>
 
       {
         data.map((item) => (
           <h1 key={item.id}>{item.title}</h1>
         ))
-      }
+      }*/}
+      <Table />
     </div>
 
   );
