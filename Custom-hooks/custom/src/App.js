@@ -13,7 +13,7 @@ function useTable() {
 
     try {
       const ans = await fetch("https://jsonplaceholder.typicode.com/users");
-      const js = ans.json();
+      const js =  await ans.json();
       setData(js);
     } catch (error) {
       setError(true);
